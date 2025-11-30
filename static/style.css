@@ -1,0 +1,24 @@
+body {
+  background: radial-gradient(circle, #00111a, #000);
+  font-family: "Poppins", sans-serif;
+  color: #17d5d5;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h1 {
+  text-shadow: 0 0 15px cyan;
+}
+
+#gameCanvas {
+  background-color: #111;
+  border: 2px solid cyan;
+  border-radius: 10px;
+  box-shadow: 0 0 20px cyan;
+}
+
+#score {
+  font-size: 20px;
+  margin-top: 15px;
+  text-shadow: 0 0 10px cyan;
+}
