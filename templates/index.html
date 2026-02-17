@@ -3,13 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Snake Game</title>
+  <title>Neon Snake Pro</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>🐍 Snake Game</h1>
-  <canvas id="gameCanvas" width="400" height="400"></canvas>
-  <p id="score">Score: 0</p>
+
+  <div class="game-container">
+    <header>
+      <h1>NEON<span>SNAKE</span></h1>
+      <div class="stats-bar">
+        <p id="score">SCORE: 0</p>
+        <p id="high-score">BEST: 0</p>
+      </div>
+    </header>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      
+      <div id="overlay" class="overlay">
+        <div class="content">
+          <h2 id="status-text">READY?</h2>
+          <button onclick="startGame()">START MISSION</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-hint">
+      <span>▲</span>
+      <div class="middle-row"><span>◄</span><span>▼</span><span>►</span></div>
+      <p>USE ARROWS TO NAVIGATE</p>
+    </div>
+  </div>
 
   <script src="{{ url_for('static', filename='game.js') }}"></script>
 </body>

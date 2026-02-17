@@ -1,0 +1,7 @@
+myflashapp 
+*.log
+*.tmp
+.venv/
+__pycache__/
+.vscode/
+venv/
